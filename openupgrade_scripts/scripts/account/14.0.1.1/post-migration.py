@@ -768,7 +768,7 @@ def migrate(env, version):
     fill_company_account_journal_suspense_account_id(env)
     fill_statement_lines_with_no_move(env)
     fill_account_journal_payment_credit_debit_account_id(env)
-    fill_account_payment_with_no_move(env)
+    #fill_account_payment_with_no_move(env) // fix..
     _delete_hooks(env)
     openupgrade.delete_record_translations(
         env.cr,
